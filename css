@@ -15,11 +15,32 @@ nav {
 #doglogo, #plogo{
     background-color: #c2def9;
     border:none;
+    position: relative;
+    padding: 0;
 }
 #doglogo2, #plogo2{
     background-color: #ccc;
     border: none;
+    position: relative;
 }
+
+#primebar{
+    float:right;
+    width: fit-content;
+    margin-bottom: 5px;
+    background-color: #003B6D;
+    height: 50px;
+    padding-right: 5px;
+    padding-top: 0px;
+}
+
+#primebar i{
+    font-size: 17px;
+    padding: 8px;
+    position: relative;
+    cursor: pointer;
+}
+
 a {
     color: white;
     text-decoration: none; /*removes underline*/
@@ -84,7 +105,6 @@ div #searchbutton:hover{ /*must call button to configure*/
 }
 #title1 {
     color: #003B6D;
-    text-shadow: #676767;
     display: flex;
     position: relative;
     left: 90px; /*must call "position:___" to move element left, right, top, or bottom*/
@@ -108,7 +128,6 @@ div #searchbutton:hover{ /*must call button to configure*/
 }
 div #adopt { /*create divs for each class help sytle childs individually and avoid shares*/
     color: #003B6D;
-    text-shadow: #676767;
     display: flex;
     position: relative;
     left: 130px; /*must call "position:___" to move element left, right, top, or bottom*/
@@ -129,7 +148,6 @@ div .adoptbutton:hover {
 }
 div .consult{
     color: #003B6D;
-    text-shadow: #676767;
     display: flex; /*allows centering/positioning elements (justify-content controls that)*/
     position: relative;/*must call "position:___" to move element left, right, top, or bottom*/
     right: -200px; 
@@ -218,7 +236,7 @@ footer{
 footer p{
     display: inline;
     position: relative;
-    left: 950px;
+    left: 900px;
     top: -1px;
     color: #003B6D;
 }
