@@ -2,89 +2,105 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="ppp.css">
+        <link rel="stylesheet" type="text/css" href="home.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Best practice to add each time unless certainly on creating for desktop only webpages $
+        needed to use responsive HTML/CSS features-->
+        <title>Paradigm Pet Professionals &ndash; Home</title> <!--shown in browser's title bar-->
     </head>
-<body>
-    <header>
-        <a id="doglogo" href="file:///Users/f8dedmac/Visual%20Studio%20Projects/Paradigm%20Pet%20Pro%20Mockup/home.html">
-        <img src="dog.png" alt="dog logo" width="40px" height="40px"></a><!--images have to be directly in html directory to call-->
-        <a id="plogo" href="file:///Users/f8dedmac/Visual%20Studio%20Projects/Paradigm%20Pet%20Pro%20Mockup/home.html">
-        <img src="2.png" alt="ppp logo" width="40px" height="40px"></a>
-        <nav>
-            <a class="active" href="file:///Users/f8dedmac/Visual%20Studio%20Projects/Paradigm%20Pet%20Pro%20Mockup/dog.html">Dogs</a>
-            <a href="https://www.aspca.org/helping-shelters-people-pets">Cats</a>
-            <a href="https://www.aspca.org/adopt-pet">Birds</a>
-        </nav>
-        <div class="searchbox">
-            <input type="text" placeholder="Search.." name="search"> <!--search box-->
-            <button type="submit" id="searchbutton"><i class="fa fa-search"></i></button> <!--submit button; i=inline element representing "icons"; "fa fa-search" refers to Font Awesome icons (fa=font, fa-search=specific icon to use)""-->
-        </div>
-    </header>
-    <h1 id="title1"><strong>Evidence-based pet care advice for every pet lover</strong></h1>
-    <img src="dogcat.png" alt="cat and dog on lawn"  width="500px" height="300px" id="dogcat">
-    <p class="tit1descript">Paradigm Pet Professionals has 12 years' experience 
-        working with pet owners,<br> certifications in pet health and nutrition, and customer 
-        recognition for outstanding support.</p>
-    <div>    
-        <h2 id="adopt"><strong>Looking for your new best friend?</strong></h2>
-        <a class="adoptbutton" href="https://www.aspca.org/helping-shelters-people-pets" target="_blank">
-            Adopt A Pet</a> <!--short hand ver. alt. to creating button-->
-    </div>
-    <div class="consult">
-        <h1 class="consult"><strong>Need basic pet care advice for the most common type of pets?</strong></h1>
-        <p class="consultdescript">Need additional help determining which type of pet is right for you 
-            and your family? We will work with you and provide tailored evidence-based pet care 
-            to ensure the lifelong health and wellness of your new companion.</p>
-    </div>
-    <div>
-        <img src="birdhouse.png" alt="birdhouse" width="400px" height="300px" id="birdhouse">
-    </div>
-    <div id="contactform">
-        <p><h2 style="text-align: center;position: relative;left: -50px;">Virtual Consultation</h2></p>
-        <p style="text-align: center;position: relative;left: -70px;">We will contact you within 48 hours to schedule a consultation. All fields are required.</p>
-        
-        <form action="/action_page.php">
-            <label for="fname"></label>
-            <input type="text" id="fname" name="firstname" placeholder="First Name">
-
-            <label for="lname"></label>
-            <input type="text" name="lastname" id="lname" placeholder="Last Name">
+    <body>
+        <header>
+            <a id="doglogo" href="file:///Users/f8dedmac/Visual%20Studio%20Projects/Paradigm%20Pet%20Pro%20Mockup/home.html">
+            <img src="dog.png" alt="dog logo" width="40px" height="50px"></a><!--images have to be directly in html directory to call-->
+            <a id="plogo" href="file:///Users/f8dedmac/Visual%20Studio%20Projects/Paradigm%20Pet%20Pro%20Mockup/home.html">
+            <img src="2.png" alt="ppp logo" width="40px" height="50px"></a>
+            <!--Added, Responsive Nav Bar-->
+            <div id="primebar" class="w3-bar"> <!--W3.CSS don't recognize #ccc (ex. w3-#ccc) for colors; have style it separately in CSS-->
+                <a href="home.html" class="w3-mobile w3-button w3-bar-item">Home</a>
+                <a href="adoption.html" class="w3-bar-item w3-mobile w3-button">Adoption</a>
+                <a href="about.html" class="w3-bar-item w3-mobile w3-button">About Us</a>
+                <a href="faq.html" class="w3-bar-item w3-mobile w3-button">FAQ</a>
             
-            <label for="email"></label>
-            <input type="text" name="email" id="email" placeholder="E-Mail">
+                <input type="text" class="w3-bar-item w3-mobile w3-input" placeholder="Search..">   
+                <button class="w3-bar-item w3-button w3-mobile" type="submit">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+            <!--Original Nav Bar-->
+            <nav>
+                <a class="active" href="file:///Users/f8dedmac/Visual%20Studio%20Projects/Paradigm%20Pet%20Pro%20Mockup/dog.html">Dogs</a>
+                <a href="file:///Users/f8dedmac/Visual%20Studio%20Projects/Paradigm%20Pet%20Pro%20Mockup/cat.html">Cats</a>
+                <a href="file:///Users/f8dedmac/Visual%20Studio%20Projects/Paradigm%20Pet%20Pro%20Mockup/bird.html">Birds</a>
+            </nav>
+            <!--<div class="searchbox">-->
+                <!--<input type="text" placeholder="Search.." name="search"> <!-search box-->
+                <!--<button type="submit" id="searchbutton"><i class="fa fa-search"></i></button> <!-submit button; i=inline element representing "icons"; "fa fa-search" refers to Font Awesome icons (fa=font, fa-search=specific icon to use)""-->
+            <!--</div>-->
+        </header>
+        <h1 id="title1"><strong>Evidence-based pet care advice for every pet lover</strong></h1>
+        <img src="dogcat.png" alt="cat and dog on lawn"  width="500px" height="300px" id="dogcat">
+        <p class="tit1descript">Paradigm Pet Professionals has 12 years' experience 
+            working with pet owners,<br> certifications in pet health and nutrition, and customer 
+            recognition for outstanding support.</p>
+        <div>    
+            <h2 id="adopt"><strong>Looking for your new best friend?</strong></h2>
+            <a class="adoptbutton" href="https://www.aspca.org/helping-shelters-people-pets" target="_blank">
+                Adopt A Pet</a> <!--short hand ver. alt. to creating button-->
+        </div>
+        <div class="consult">
+            <h1 class="consult"><strong>Need basic pet care advice for the most common type of pets?</strong></h1>
+            <p class="consultdescript">Need additional help determining which type of pet is right for you 
+                and your family? We will work with you and provide tailored evidence-based pet care 
+                to ensure the lifelong health and wellness of your new companion.</p>
+        </div>
+        <div>
+            <img src="birdhouse.png" alt="birdhouse" width="400px" height="300px" id="birdhouse">
+        </div>
+        <div id="contactform">
+            <p><h2 style="text-align: center;position: relative;left: -50px;">Virtual Consultation</h2></p>
+            <p style="text-align: center;position: relative;left: -70px;">We will contact you within 48 hours to schedule a consultation. All fields are required.</p>
+            
+            <form action="/action_page.php">
+                <label for="fname"></label>
+                <input type="text" id="fname" name="firstname" placeholder="First Name">
 
-            <label for="phone"></label>
-            <input type="text" name="phone" id="phone" placeholder="Phone">
+                <label for="lname"></label>
+                <input type="text" name="lastname" id="lname" placeholder="Last Name">
+                
+                <label for="email"></label>
+                <input type="text" name="email" id="email" placeholder="E-Mail">
 
-            <label for="timezone"></label>
-            <input type="text" name="timezone" id="timezone" placeholder="Timezone">
+                <label for="phone"></label>
+                <input type="text" name="phone" id="phone" placeholder="Phone">
 
-            <label for="petname"></label>
-            <input type="text" name="petname" id="petname" placeholder="Pet Name">
+                <label for="timezone"></label>
+                <input type="text" name="timezone" id="timezone" placeholder="Timezone">
 
-            <label for="pettype"></label>
-            <input type="text" name="pettype" id="pettype" placeholder="Pet Type">
+                <label for="petname"></label>
+                <input type="text" name="petname" id="petname" placeholder="Pet Name">
 
-            <label for="petage"></label>
-            <input type="text" name="petage" id="petage" placeholder="Pet Age">
+                <label for="pettype"></label>
+                <input type="text" name="pettype" id="pettype" placeholder="Pet Type">
 
-            <input type="submit" id="consultbutton" value="Submit">
-        </form>
-    </div>
-    <footer>
-        <a id="doglogo2" href="file:///Users/f8dedmac/Visual%20Studio%20Projects/Paradigm%20Pet%20Pro%20Mockup/home.html">
-        <img src="dog.png" alt="dog logo" width="20px" height="24px" style="position: relative; top: 4px;"></a>
-        <a id="plogo2" href="file:///Users/f8dedmac/Visual%20Studio%20Projects/Paradigm%20Pet%20Pro%20Mockup/home.html">
-        <img src="2.png" alt="ppp logo" width="20px" height="24px" style="position: relative; top: 4px;"></a>
-        <h2 style="display: inline; position:relative; left: 510px; top: 2px;">Stay Connected</h2>
-        <form id="subscribe" action="/action_page.php">
-            <label for="subscribe"></label>
-            <input type="text" id="subscribe" name="subscribe" placeholder="E-Mail">
+                <label for="petage"></label>
+                <input type="text" name="petage" id="petage" placeholder="Pet Age">
 
-            <input type="submit" value="Subscribe" id="subscribebutton">
-        </form>
-        <p>© Copyright - Paradigm Pet Professionals</p>
-    </footer>
-</body>
-</html>
+                <input type="submit" id="consultbutton" value="Submit">
+            </form>
+        </div>
+        <footer>
+            <a id="doglogo2" href="file:///Users/f8dedmac/Visual%20Studio%20Projects/Paradigm%20Pet%20Pro%20Mockup/home.html">
+            <img src="dog.png" alt="dog logo" width="20px" height="24px" style="position: relative; top: 4px;"></a>
+            <a id="plogo2" href="file:///Users/f8dedmac/Visual%20Studio%20Projects/Paradigm%20Pet%20Pro%20Mockup/home.html">
+            <img src="2.png" alt="ppp logo" width="20px" height="24px" style="position: relative; top: 4px; left: -15px;"></a>
+            <h2 style="display: inline; position:relative; left: 510px; top: 2px;">Stay Connected</h2>
+            <form id="subscribe" action="/action_page.php">
+                <label for="subscribe"></label>
+                <input type="text" id="subscribe" name="subscribe" placeholder="E-Mail">
+
+                <input type="submit" value="Subscribe" id="subscribebutton">
+            </form>
+            <p>© Copyright - Paradigm Pet Professionals</p>
+        </footer>
+    </body>
+    </html>
