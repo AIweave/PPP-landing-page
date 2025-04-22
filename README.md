@@ -1,10 +1,10 @@
 # Paradigm Pet Professionals-landing-page
 First HTML landing page for a protoype of a website assigned as a performance assessement (school coursework).
 
-![Screen Shot 2025-04-08 at 10 42 30 AM](https://github.com/user-attachments/assets/aa6d8056-2677-45f2-b698-5ed696e77871)
+![Screen Shot 2025-04-22 at 10 56 27 AM](https://github.com/user-attachments/assets/e6118145-69bd-44b0-96d7-1c3825dbf990)
 
 # Paradigm Pet Professionals-dogs page
-![Screen Shot 2025-04-08 at 1 29 48 PM](https://github.com/user-attachments/assets/3b9259c0-d2bb-4ae9-ae93-767c9440d848)
+![Screen Shot 2025-04-22 at 10 56 31 AM](https://github.com/user-attachments/assets/59699540-f63a-4309-8817-0980af56b0f4)
 
 # Paradigm Pet Professionals-cats page
 ![Screen Shot 2025-04-15 at 1 07 22 PM](https://github.com/user-attachments/assets/4b1c3e22-b7a9-4faf-b520-a49fc1053838)
