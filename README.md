@@ -1,5 +1,6 @@
 # Paradigm Pet Professionals-landing-page
 First HTML landing page for a protoype of a website assigned as a performance assessement (school coursework).
+*This webpage isn't responsive. 
 
 ![Screen Shot 2025-04-22 at 10 56 27 AM](https://github.com/user-attachments/assets/e6118145-69bd-44b0-96d7-1c3825dbf990)
 
